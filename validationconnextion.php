@@ -12,9 +12,11 @@ $_SESSION['id']=mysqli_fetch_array($result)[0];
 
 $query="SELECT * FROM users WHERE username='$username' && password='$password'";   
 if(mysqli_num_rows(mysqli_query($con,$query))>0){
-   header("Location: page.php");
+   header(" Location: page.php");
 }
 else echo"username ou mot de passe incorrect";
 }
 
+
 ?>
+         
